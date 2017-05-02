@@ -1,0 +1,2 @@
+baseurl: /water
+exlude: ["README.md"]
