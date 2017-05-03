@@ -100,7 +100,7 @@ nav .logo .logo-sub {
   margin-left: 5%;
 }
 
-.main-content .content h1 {
+.main-content .content h1, .content-responsive h1 {
   font-size: 35px;
   margin: 0;
 }
@@ -217,6 +217,31 @@ nav .logo .logo-sub {
   transition: transform 0.6s ease;
 }
 
+
+.content-responsive {
+  display: flex;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.content-responsive .main-header {
+  position: relative;
+  z-index: 1;
+}
+
+.res-cup {
+  background-image: url(images/drinkingglass.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  left: 30%;
+  }
+
 .responsive-nav .top {
   align-items: center;
   display: flex;
@@ -243,6 +268,10 @@ nav .logo .logo-sub {
 
 @media screen and (max-width: 1024px) {
   nav .nav-main {
+    display: none;
+  }
+
+  .content, .cup {
     display: none;
   }
 
