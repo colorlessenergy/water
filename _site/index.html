@@ -5,61 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>water</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <nav>
-  <p>Water <span>is life</span></p>
-  <ul>
+  <p class="logo">Water <span class="logo-sub">is life</span></p>
+  <img id="menuIcon" class="responsive-navbar" src="images/menu-icon.svg" alt="menu">
+  <ul class="nav-main">
     <li>My Work</li>
     <li>Services</li>
     <li>Get in touch</li>
   </ul>
+  <div id="responsive-nav" class="responsive-nav">
+    <div class="top">
+      <p class="logo">Water <span class="logo-sub">is life</span></p>
+      <p class="responsive-navbar">x</p>
+    </div>
+    <ul class="nav-info">
+      <li>My Work</li>
+      <li>Services</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
 </nav>
 
-  <section>
-  <div>
-    <h1>a simple story</h1>
-    <h1>about the best drink in the world</h1>
-    <p>see why the story matters!</p>
-    <p><a href="#">learn more -></a></p>
+  <section class="main-content">
+  <div class="content">
+    <div class="main-header">
+      <h1>A simple story about</h1>
+      <h1>the best drink in the world</h1>
+    </div>
+    <p class="story">See why the story matters and how the story gives life!</p>
+    <p class="link"><a href="#">Learn more &#8594;</a></p>
   </div>
-  <div>
-    <img src="http://placehold.it/350x400" alt="">
-  </div>
-</section>
-<section>
-  <h1>Discover. Relax. Drink</h1>
-  <p>Water is a drink that is healthy for you! Water taste way better than any sugary drink.</p>
-  <div>
-    <p><a href="#">who we are -></a></p>
-    <p><a href="#">how it is done -></a></p>
+  <div class="cup">
+    <img src="images/drinkingglass.png" alt="drinking glass">
   </div>
 </section>
-<section>
+<section class="thoughts">
+  <p class="thought-title">Discover. Relax. Drink.</p>
+  <div class="thought-desc">
+    <p>Water is a drink that is healthy for you!</p>
+    <p>Water taste way better than any sugary drink.</p>
+  </div>
+  <div class="thought-link">
+    <p><a href="#">who we are &#8594;</a></p>
+    <p><a href="#">how it is done &#8594;</a></p>
+  </div>
+</section>
+<section class="projects">
   <h1>Latest looks of water!</h1>
-  
-  <div class="bg-img" style="background-image: url(images/sunrise.jpg)">
-    <h2>sunrise</h2>
+  <div class="projects-img">
+    
+    <div class="bg-img" style="background-image: url(images/sunrise.jpg)">
+      <h2>sunrise</h2>
+    </div>
+    
+    <div class="bg-img" style="background-image: url(images/water.jpg)">
+      <h2>ocean</h2>
+    </div>
+    
+    <div class="bg-img" style="background-image: url(images/waterdrop.jpg)">
+      <h2>waterdrop</h2>
+    </div>
+    
+    <div class="bg-img" style="background-image: url(images/wave.jpg)">
+      <h2>wave</h2>
+    </div>
+    
   </div>
-  
-  <div class="bg-img" style="background-image: url(images/water.jpg)">
-    <h2>ocean</h2>
-  </div>
-  
-  <div class="bg-img" style="background-image: url(images/waterdrop.jpg)">
-    <h2>waterdrop</h2>
-  </div>
-  
-  <div class="bg-img" style="background-image: url(images/wave.jpg)">
-    <h2>wave</h2>
-  </div>
-  
-  <p><a href="#">other projects</a></p>
+  <p class="projects-link"><a href="#">All projects &#8594;</a></p>
 </section>
-<section>
-  <h2>Lets talk.</h2>
+<section class="contact">
+  <h2>Let's talk.</h2>
   <p><a href="contact.html">Get in touch</a></p>
 </section>
 
+  <footer>
+  <p class="location">US office</p>
+  <p>Long Beach, California</p>
+  <ul>
+    <li><a href="#">Github</a></li>
+    <li><a href="#">Instagram</a></li>
+  </ul>
+  <p>&copy; 2017 Brian Munoz</p>
+</footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
