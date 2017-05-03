@@ -2,4 +2,35 @@
 layout: default
 ---
 
-<p>hi</p>
+<section>
+  <div>
+    <h1>a simple story</h1>
+    <h1>about the best drink in the world</h1>
+    <p>see why the story matters!</p>
+    <p><a href="#">learn more -></a></p>
+  </div>
+  <div>
+    <img src="http://placehold.it/350x400" alt="">
+  </div>
+</section>
+<section>
+  <h1>Discover. Relax. Drink</h1>
+  <p>Water is a drink that is healthy for you! Water taste way better than any sugary drink.</p>
+  <div>
+    <p><a href="#">who we are -></a></p>
+    <p><a href="#">how it is done -></a></p>
+  </div>
+</section>
+<section>
+  <h1>Latest looks of water!</h1>
+  {% for waters in site.data.water %}
+  <div class="bg-img" style="background-image: url({{waters.link}})">
+    <h2>{{waters.title}}</h2>
+  </div>
+  {% endfor %}
+  <p><a href="#">other projects</a></p>
+</section>
+<section>
+  <h2>Lets talk.</h2>
+  <p><a href="contact.html">Get in touch</a></p>
+</section>
